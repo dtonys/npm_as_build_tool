@@ -32,6 +32,6 @@
     "sass:watch:stop": "pgrep -f 'sass --watch stylesheets:public/css' | xargs kill",
     "watch:stop": "npm run livereload:stop && npm run sass:watch:stop",
     "watch": "npm run livereload && npm run sass:watch",
-    "start": "node app.js"
+    "start": "nodemon --watch app.js app.js"
   }
 }
